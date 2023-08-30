@@ -5,7 +5,7 @@ import { Sidebar } from "widgets/Sidebar";
 
 import { Spinner } from "shared/ui/Spinner/Spinner";
 
-import styles from "./layout.module.scss";
+import styles from "./Layout.module.scss";
 
 interface ILayout {
   cls?: string;
