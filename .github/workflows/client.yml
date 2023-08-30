@@ -7,6 +7,9 @@ on:
 jobs:
   pipline:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./client
     strategy:
       matrix:
         node-version: [18.x]
@@ -17,8 +20,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node-version}}
-      - name: change directory
-        run: cd ./client
       - name: install modules
         run: npm install
       - name: build productiomn
