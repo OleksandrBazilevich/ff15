@@ -1,0 +1,6 @@
+.contentPage {
+  transition: margin 0.2s linear;
+  flex-grow: 1;
+  position: relative;
+  margin-left: var(--sidebar-width);
+}

@@ -1,0 +1,68 @@
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arrowIcon {
+    fill: var(--secondary-color);
+    transform: rotateX(0);
+    transition:
+      transform 0.2s linear,
+      fill 0.2s linear;
+    width: 20px;
+    height: 25px;
+  }
+
+  .open {
+    &.arrowIcon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .icon {
+    width: 19px;
+    height: 19px;
+    margin-right: 20px;
+    fill: var(--secondary-color);
+    stroke: var(--secondary-color);
+  }
+
+  &.active {
+    color: var(--primary-color);
+
+    .icon {
+      fill: var(--primary-color);
+      stroke: var(--primary-color);
+    }
+  }
+
+  &:hover {
+    color: var(--primary-color);
+
+    .arrowIcon {
+      fill: var(--primary-color);
+    }
+
+    .icon {
+      stroke: var(--primary-color);
+      fill: var(--primary-color);
+    }
+  }
+
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 100%;
+  transition:
+    background,
+    color 0.2s ease;
+}

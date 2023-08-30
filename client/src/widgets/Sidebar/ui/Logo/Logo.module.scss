@@ -1,0 +1,19 @@
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--header-height);
+  opacity: 1;
+  transition: opacity 0.2s linear;
+
+  h1 {
+    font: var(--font-l);
+    color: var(--secondary-color);
+    font-weight: 700;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+export { ReactComponent as SearchIcon } from "./icons/searchIcon.svg";
+export { ReactComponent as ThemeSwitcherIcon } from "./icons/ThemeSwitcherIcon.svg";
+export { ReactComponent as SelectArrowIcon } from "./icons/SelectArrowIcon.svg";
+export { ReactComponent as NoDataIcon } from "./icons/noDataIcon.svg";
+export { ReactComponent as NotificationIcon } from "./icons/NotificationIcon.svg";
+export { ReactComponent as HomeIcon } from "./icons/HomeIcon.svg";
+export { ReactComponent as ProfileIcon } from "./icons/ProfileIcon.svg";
+export { ReactComponent as HighlightsIcon } from "./icons/HighlightsIcon.svg";
+export { ReactComponent as ChampionsIcon } from "./icons/ChampionsIcon.svg";
+export { ReactComponent as LiderboardsIcon } from "./icons/LiderboardsIcon.svg";
+export { ReactComponent as AdminIcon } from "./icons/AdminIcon.svg";
+export { ReactComponent as CollapseArrowIcon } from "./icons/CollapseArrowIcon.svg";

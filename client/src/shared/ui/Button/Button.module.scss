@@ -1,0 +1,38 @@
+.Button {
+  cursor: pointer;
+  color: var(--secondary-color);
+  border: none;
+  margin: 10px 20px;
+}
+
+.clean {
+  background: none;
+}
+
+.default,
+.primary {
+  padding: 10px 40px;
+  border-radius: 15px;
+}
+
+.default {
+  background-color: var(--surface-secondary-color);
+  transition:
+    color,
+    box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--primary-color);
+    box-shadow: inset 0 0 0 2px var(--primary-color);
+  }
+}
+
+.primary {
+  transition: filter 0.2s ease-in-out;
+  background-color: var(--primary-color);
+  color: var(--white);
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}

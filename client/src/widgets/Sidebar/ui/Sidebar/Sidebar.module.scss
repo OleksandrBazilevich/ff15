@@ -1,0 +1,41 @@
+.Sidebar {
+  width: var(--sidebar-width);
+  height: 100%;
+  min-height: 100vh;
+  position: fixed;
+  transition: width 0.2s linear;
+
+  .collapsedLogo {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .collapse {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    transform: rotate(180deg);
+    transition: transform 0.2s linear;
+
+    svg {
+      fill: var(--secondary-color);
+      width: 25px;
+      height: 25px;
+    }
+
+    &:hover {
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+  }
+
+  background: var(--surface-color);
+  border-right: 1px var(--bg-color) solid;
+
+  &.collapsed {
+    .collapse {
+      transform: rotate(360deg);
+    }
+  }
+}

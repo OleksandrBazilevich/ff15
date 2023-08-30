@@ -1,0 +1,14 @@
+.Empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.icon {
+  fill: var(--secondary-color);
+  width: 50px;
+  height: 50px;
+}

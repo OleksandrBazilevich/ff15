@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "baseUrl": "./src/",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": false,
+    "types": ["jest", "@testing-library/react", "node"]
+  },
+  "typeAcquisition": {
+    "include": ["jest"]
+  },
+  "include": ["./config/jest/setupTests.ts", "src"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.submenu {
+  transform: scaleY(0);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  transform-origin: top;
+
+  &.open {
+    max-height: var(--sidebar);
+    transform: scaleY(1);
+  }
+}

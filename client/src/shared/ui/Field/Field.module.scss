@@ -1,0 +1,35 @@
+.Field {
+  padding: 10px 15px 10px 40px;
+  position: relative;
+  border-radius: 30px;
+  background: var(--surface-secondary-color);
+
+  .test {
+    color: red;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    background: inherit;
+    color: var(--secondary-color);
+  }
+
+  input::placeholder {
+    color: var(--secondary-color);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    fill: var(--secondary-color);
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 15px;
+  }
+}
