@@ -1,4 +1,4 @@
-import RenderWithProviders from "shared/lib/tests";
+import { RenderWithProviders } from "shared/lib";
 
 import { fireEvent, screen } from "@testing-library/react";
 

@@ -15,7 +15,7 @@ interface ISidebar {
   cls?: string;
 }
 
-const Sidebar: FC<ISidebar> = ({ cls }) => {
+export const Sidebar: FC<ISidebar> = ({ cls }) => {
   const navigate = useNavigate();
   const [isCollapsed, setIsCollapsed] = useState(true);
   const onClick = (item: IMenuItem) => {
@@ -51,4 +51,3 @@ const Sidebar: FC<ISidebar> = ({ cls }) => {
     </div>
   );
 };
-export default Sidebar;

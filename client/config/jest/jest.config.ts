@@ -11,7 +11,7 @@ const config: Config = {
   moduleDirectories: ["node_modules", "src"],
   moduleNameMapper: {
     "\\.(s?css)$": "identity-obj-proxy",
-    "\\.svg": path.resolve(__dirname, "JestEmptyComponent.tsx")
+    "\\.svg": path.resolve(__dirname, "./mocks/svgMock.tsx")
   },
   // All imported modules in your tests should be mocked automatically
   // automock: false,
