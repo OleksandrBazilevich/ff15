@@ -35,5 +35,6 @@ jobs:
       - name: visual testing
         uses: chromaui/action@v1
         with:
+          buildScriptName: "stotybook:build"
           workingDir: "./client"
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
