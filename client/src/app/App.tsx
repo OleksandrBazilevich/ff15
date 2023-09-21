@@ -1,5 +1,3 @@
-import { useTheme } from "features/ChangeTheme";
-
 import { classNames } from "shared/lib";
 
 import AppRouter from "./providers/router/AppRouter";
