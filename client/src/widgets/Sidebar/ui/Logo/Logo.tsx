@@ -15,7 +15,7 @@ export const Logo: FC<ILogo> = ({ cls }) => {
       data-testid="sidebarLogo"
       className={classNames(styles.Logo, {}, [cls])}
     >
-      <AppLink to={"/"}>
+      <AppLink theme="clean" to={"/"}>
         <h1>
           FF<span>15</span>
         </h1>

@@ -1,0 +1,60 @@
+.content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+    z-index: 2;
+}
+
+.logo {
+    width: 45%;
+    animation-name: text-animation;
+    animation-duration: 5s;
+
+    svg{
+        fill: var(--surface-color);
+    }
+
+    h1 {
+        font: var(--font-xl);
+        margin-bottom: 10px;
+        color: var(--surface-color);
+        font-weight: 700;
+
+        span {
+            color: var(--primary-color);
+        }
+  
+    }
+
+    h3{
+        font-weight: 400;
+        color: var(--surface-color);
+
+        .sublogo{
+            font-weight: 700;
+
+            span {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    10% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}

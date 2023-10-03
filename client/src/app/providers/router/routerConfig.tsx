@@ -6,9 +6,11 @@ import { AdminPageAsync } from "pages/AdminPage";
 import { ChampionsPageAsync } from "pages/ChampionsPage";
 import { HighlightsPageAsync } from "pages/HighlightsPage";
 import { LiderboardsPageAsync } from "pages/LiderboardsPage";
+import { LoginPageAsync } from "pages/LoginPage";
 import { MainPageAsync } from "pages/MainPage";
 import { NotFoundPage } from "pages/NotFoundPage/NotFoundPage";
 import { ProfilePageAsync } from "pages/ProfilePage";
+import RegisterPage from "pages/RegisterPage/RegisterPage";
 
 import { Spinner } from "shared/ui/Spinner/Spinner";
 
@@ -128,7 +130,7 @@ export const routerConfig: RouterConfigType = {
     path: Paths.register,
     element: (
       <Suspense fallback={<Spinner />}>
-        <AboutPageAsync />
+        <RegisterPage />
       </Suspense>
     )
   },
@@ -137,7 +139,7 @@ export const routerConfig: RouterConfigType = {
     path: Paths.login,
     element: (
       <Suspense fallback={<Spinner />}>
-        <AboutPageAsync />
+        <LoginPageAsync />
       </Suspense>
     )
   },

@@ -4,10 +4,6 @@
   border-radius: 30px;
   background: var(--surface-secondary-color);
 
-  .test {
-    color: red;
-  }
-
   input {
     width: 100%;
     border: none;
@@ -17,6 +13,7 @@
 
   input::placeholder {
     color: var(--secondary-color);
+    opacity: .9;
   }
 
   input:focus {
@@ -30,6 +27,27 @@
     fill: var(--secondary-color);
     top: 50%;
     transform: translate(0, -50%);
+
+  }
+
+  .start{
     left: 15px;
+  }
+
+  .end{
+    right: 15px;
+  }
+
+  .passwordIcon{
+    user-select: none;
+    cursor: pointer;
+  }
+}
+
+.error{
+  border: 1px solid var(--error-color);
+
+  .icon{
+    fill: var(--error-color);
   }
 }

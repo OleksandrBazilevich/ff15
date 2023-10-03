@@ -24,8 +24,7 @@ export const Default: Story = {
   ],
   args: {
     value: "",
-    placeholder: "field",
-    Icon: SearchIcon
+    placeholder: "field"
   }
 };
 
@@ -33,7 +32,48 @@ export const DefaultDark: Story = {
   decorators: [CenteredDecorator, (Story) => ThemeDecorator(Story, Theme.DARK)],
   args: {
     value: "",
+    placeholder: "field"
+  }
+};
+
+export const WithIcon: Story = {
+  decorators: [
+    CenteredDecorator,
+    (Story) => ThemeDecorator(Story, Theme.LIGHT)
+  ],
+  args: {
+    value: "",
     placeholder: "field",
     Icon: SearchIcon
+  }
+};
+
+export const WithIconDark: Story = {
+  decorators: [CenteredDecorator, (Story) => ThemeDecorator(Story, Theme.DARK)],
+  args: {
+    value: "",
+    placeholder: "field",
+    Icon: SearchIcon
+  }
+};
+
+export const Error: Story = {
+  decorators: [
+    CenteredDecorator,
+    (Story) => ThemeDecorator(Story, Theme.LIGHT)
+  ],
+  args: {
+    value: "",
+    placeholder: "field",
+    color: "error"
+  }
+};
+
+export const ErrorDark: Story = {
+  decorators: [CenteredDecorator, (Story) => ThemeDecorator(Story, Theme.DARK)],
+  args: {
+    value: "",
+    placeholder: "field",
+    color: "error"
   }
 };

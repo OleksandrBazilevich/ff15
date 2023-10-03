@@ -10,3 +10,11 @@ export { ReactComponent as ChampionsIcon } from "./icons/ChampionsIcon.svg";
 export { ReactComponent as LiderboardsIcon } from "./icons/LiderboardsIcon.svg";
 export { ReactComponent as AdminIcon } from "./icons/AdminIcon.svg";
 export { ReactComponent as CollapseArrowIcon } from "./icons/CollapseArrowIcon.svg";
+export { ReactComponent as GoogleIcon } from "./icons/GoogleIcon.svg";
+export { ReactComponent as FacebookIcon } from "./icons/FacebookIcon.svg";
+export { ReactComponent as TwitterIcon } from "./icons/TwitterIcon.svg";
+export { ReactComponent as ShowPasswordIcon } from "./icons/ShowPasswordIcon.svg";
+export { ReactComponent as HidePasswordIcon } from "./icons/HidePasswordIcon.svg";
+export { ReactComponent as SkullIcon } from "./icons/SkullIcon.svg";
+
+export { default as clip } from "./media/bg-jhin.mp4";

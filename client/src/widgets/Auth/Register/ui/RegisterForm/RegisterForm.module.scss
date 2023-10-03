@@ -1,0 +1,33 @@
+.RegisterForm{
+    background-color: var(--surface-color);
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.wrapper{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.socialmediaButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider{
+    margin: 20px 0;
+
+    .text{
+        margin: -20px auto 0;
+        opacity: 0.9;
+        padding: 5px 10px ;
+        background-color: var(--surface-color);
+        width: fit-content;
+    }
+}
+
+
+

@@ -1,0 +1,16 @@
+.AuthField{
+    margin-bottom: 20px;
+}
+
+.field{
+    border-radius: 10px;
+    padding-left:15px;
+    margin-bottom: 5px;
+}
+
+.error{
+    color: var(--error-color);
+    font: var(--font-s);
+    font-weight: 600;
+    margin-left: 10px;
+}

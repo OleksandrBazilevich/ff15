@@ -13,7 +13,11 @@ const defaultTheme =
 const ThemeProvider = (component: () => React.ReactNode) => () => {
   const [theme, setTheme] = useState<Theme>(defaultTheme);
   useEffect(() => {
-    document.body.className = theme;
+    if (location.pathname === "/login" || location.pathname === "/register") {
+      document.body.className = Theme.LIGHT;
+    } else {
+      document.body.className = theme;
+    }
   });
   const themeProps = useMemo(
     () => ({

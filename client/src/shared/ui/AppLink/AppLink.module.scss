@@ -1,4 +1,23 @@
 .AppLink {
   text-decoration: none;
+}
+
+.clean,
+.default{
   color: inherit;
 }
+
+.primary{
+  color: var(--primary-color);
+}
+
+.default,
+.primary{
+  transition: border-bottom-color .2s ease-out;
+  border-bottom: solid 2px transparent;
+  
+  &:hover{
+    border-color: var(--primary-color);
+  }
+}
+
